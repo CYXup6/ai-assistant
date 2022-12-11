@@ -12,6 +12,7 @@ const instance = axios.create({
   baseURL: 'https://api.openai.com',
   timeout: 60 * 1000,
   headers: {
+    Content-Type: `application/json`,
     Authorization: `Bearer ${OPENAI_API_KEY}`,
   },
 });
